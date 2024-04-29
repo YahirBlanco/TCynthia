@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+            <link href="https://fonts.cdnfonts.com/css/la-unica" rel="stylesheet">
+            <link href="https://fonts.cdnfonts.com/css/the-bold-font" rel="stylesheet">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            table {
+        width: 70%;
+        border-collapse:separate;
+    }
+    th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        box-sizing:border-box;
+    }
+    #formulario {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+        padding: 40px;
+        border-radius: 50px;
+        border: 20px solid #ddd;
+    }
+</style>
+        </style>
+    </head>
+</head>
+<body> 
+    <header>
+        <div class="back">
+          <div class="menu container">
+            <a href="index.html" class="logo">Inicio</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+              <img src="img/img/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+              <ul>
+                <li><a style="font-family: Verdana, Geneva, Tahoma, sans-serif;"href="contaminaciondelaire.html">Regresar</a></li>
+                <li><a style="font-family: Verdana, Geneva, Tahoma, sans-serif;"href="cuestionario.html">Hacer cuestionario</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header> 
+
+      <h2>Formulario</h2>
+
+<form id="formulario">
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <td><input type="text" name="nombre"></td>
+        </tr>
+        <tr>
+            <th>Apellido</th>
+            <td><input type="text" name="apellido"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <th>Edad</th>
+            <td><input type="text" name="edad"></td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Guardar">
+</form>
+
+<script>
+    document.getElementById("formulario").onsubmit = function(event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+        var data = {};
+        formData.forEach(function(value, key){
+            data[key] = value;
+        });
+        console.log(data); 
+    };
+</script>
+
+  
+</body>
+</html>
