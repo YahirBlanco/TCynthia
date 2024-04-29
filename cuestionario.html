@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-            <link href="https://fonts.cdnfonts.com/css/la-unica" rel="stylesheet">
-            <link href="https://fonts.cdnfonts.com/css/the-bold-font" rel="stylesheet">
-        <title>Cuestionario de la Contaminacion</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de la Contaminación</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/la-unica" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/the-bold-font" rel="stylesheet">
+    <style>
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 15px solid #ccc; 
+            border-radius: 10px;
+            box-shadow: 30px 10px 10px rgba(0, 0, 0, 0.1); 
+        }
+        form {
+            margin-top: 20px;
+        }
+        form ol {
+            list-style: none;
+            padding: 0;
+        }
+        form li {
+            margin-bottom: 20px;
+        }
+        form textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        form button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body> 
     <header>
@@ -25,58 +64,63 @@
             </label>
             <nav class="navbar">
               <ul>
-                <li><a style="font-family: Verdana, Geneva, Tahoma, sans-serif;"href="contaminaciondelaire.html">Regresar</a></li>
+                <li><a style="font-family: Verdana, Geneva, Tahoma, sans-serif;"href="formulario.html">Regresar</a></li>
               </ul>
             </nav>
           </div>
         </div>
       </header> 
 
-    <form>
-        <ol>
-            <li>
-                <p>1. ¿Qué es la contaminación?</p>
-                <textarea name="pregunta1" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>2. ¿Causas de la contaminación?</p>
-                <textarea name="pregunta2" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>3. Consecuencias de la contaminación</p>
-                <textarea name="pregunta3" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>4. ¿Tipos de contaminación?</p>
-                <textarea name="pregunta4" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>5. ¿Causas de la contaminación del aire?</p>
-                <textarea name="pregunta5" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>6. ¿Causas de la contaminación del suelo?</p>
-                <textarea name="pregunta6" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>7. ¿Causas de la contaminación del agua?</p>
-                <textarea name="pregunta7" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>8. ¿Qué podemos hacer para evitar la contaminación?</p>
-                <textarea name="pregunta8" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>9. ¿Cómo afecta el ecosistema?</p>
-                <textarea name="pregunta9" rows="3" cols="50"></textarea>
-            </li>
-            <li>
-                <p>10. ¿La tecnología aporta a su cuidado?</p>
-                <textarea name="pregunta10" rows="3" cols="50"></textarea>
-            </li>
-        </ol>
-        
-        <button type="submit">Enviar respuestas</button>
-    </form>
+      <div class="texto-presentacion4">
+        <h1 style="color: rgb(0, 0, 0); font-family: Georgia, 'Times New Roman', Times, serif;"class="display-4">Cuestionario </h1>
+
+    <div class="form-container">
+        <form>
+            <ol>
+                <li>
+                    <p>1. ¿Qué es la contaminación?</p>
+                    <textarea name="pregunta1" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>2. ¿Causas de la contaminación?</p>
+                    <textarea name="pregunta2" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>3. Consecuencias de la contaminación</p>
+                    <textarea name="pregunta3" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>4. ¿Tipos de contaminación?</p>
+                    <textarea name="pregunta4" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>5. ¿Causas de la contaminación del aire?</p>
+                    <textarea name="pregunta5" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>6. ¿Causas de la contaminación del suelo?</p>
+                    <textarea name="pregunta6" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>7. ¿Causas de la contaminación del agua?</p>
+                    <textarea name="pregunta7" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>8. ¿Qué podemos hacer para evitar la contaminación?</p>
+                    <textarea name="pregunta8" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>9. ¿Cómo afecta el ecosistema?</p>
+                    <textarea name="pregunta9" rows="3" cols="50"></textarea>
+                </li>
+                <li>
+                    <p>10. ¿La tecnología aporta a su cuidado?</p>
+                    <textarea name="pregunta10" rows="3" cols="50"></textarea>
+                </li>
+            </ol>
+            
+            <button type="submit">Enviar respuestas</button>
+        </form>
+    </div>
 </body>
 </html>
